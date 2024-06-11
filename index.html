@@ -20,18 +20,17 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
 
-<style>
-    .container {
-        width: 50%;
-    }
-
-</style>
+    <style>
+        .container {
+            width: 50%;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
         <h1 class="text-center">Deportes</h1>
-        <div action="/agregar" class="border rounded p-4">
+        <div class="border rounded p-4">
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Nombre</label>
 
@@ -140,20 +139,21 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="rounded p-4">
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Nombre</label>
+                            <div class="col-sm-10">
+                                <input id="nombreModal" disabled type="text" class="form-control" name="nombre" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Precio</label>
+                            <div class="col-sm-10">
+                                <input id="precioModal" type="text" class="form-control" precio="precio" />
+                            </div>
+                        </div>
+                        <button class="btn btn-warning" onclick="edit()">Editar</button>
                     </form>
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Nombre</label>
-                        <div class="col-sm-10">
-                            <input id="nombreModal" disabled type="text" class="form-control" name="nombre" />
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Precio</label>
-                        <div class="col-sm-10">
-                            <input id="precioModal" type="text" class="form-control" precio="precio" />
-                        </div>
-                    </div>
-                    <button class="btn btn-warning" onclick="edit()">Editar</button>
                 </div>
             </div>
         </div>
